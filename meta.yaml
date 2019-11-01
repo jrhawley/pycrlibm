@@ -10,23 +10,25 @@ source:
 
 build:
   number: 0
-  script: "$PYTHON -m pip install . --no-deps --ignore-installed -vv "
+  script:
+    - make crlibm
 
 requirements:
   host:
-    - python>=3
+    - python {{PY_VER}}*|>=3.4
     - pip
   run:
     - python
 
 test:
   imports:
-    - interval
+    - crlibm
 
 about:
   home: https://github.com/taschini/pycrlibm
   license_file: LICENSE
   summary: Python bindings for CRlibm
+  doc_url: https://pycrlibm.readthedocs.io
 
 extra:
   recipe-maintainers:
