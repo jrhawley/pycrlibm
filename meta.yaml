@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python {{PY_VER}}*|>=3.4
+    - python
     - pip
   run:
     - python
