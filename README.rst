@@ -41,7 +41,10 @@ Installation
 
 At the command line::
 
+    # from PyPI
     $ pip install crlibm
+    # from Anaconda Cloud
+    $ conda install -c jrhawley pycrlibm
 
 On Microsoft Windows ``pip`` will try first to download a binary
 archive in *wheel* format, and if no such a *wheel* can be found for
@@ -121,6 +124,17 @@ Features
 
 
 * The function ``pow`` in CRlibm is not exported.
+
+Building
+--------
+
+CRlibm uses `make` to compile ::
+    $ make crlibm
+
+
+To build the Anaconda package, use `conda build` ::
+
+    $ conda build --python {py_ver} meta.yaml
 
 
 License
