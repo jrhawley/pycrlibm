@@ -125,10 +125,12 @@ Features
 
 * The function ``pow`` in CRlibm is not exported.
 
+
 Building
 --------
 
-CRlibm uses `make` to compile ::
+Use make to compile ::
+
     $ make crlibm
 
 
