@@ -12,6 +12,7 @@ build:
   number: 0
   script:
     - make crlibm
+    - python setup.py install
 
 requirements:
   host:
